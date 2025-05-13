@@ -19,8 +19,3 @@ FROM base AS final
 RUN mkdir -p /models && \
     cd /models && \
     git clone https://huggingface.co/LoneStriker/NeuralBeagle14-7B-8.0bpw-h8-exl2
-
-# 3) Download the open model into /models/
-RUN huggingface-cli snapshot-download \
-      LoneStriker/NeuralBeagle14-7B-8.0bpw-h8-exl2 \
-      --local-dir /models/NeuralBeagle14-7B-8.0bpw-h8-exl2
