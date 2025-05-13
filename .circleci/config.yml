@@ -29,7 +29,7 @@ jobs:
           name: Build & push without cache
           command: |
             TAG="${CIRCLE_TAG:-latest}"
-            IMG="docker.io/$DOCKERHUB_USER/your-image-name"
+            IMG="docker.io/$DOCKERHUB_USER/vllm-discord-bot"
 
             docker build \
               --progress=plain \
